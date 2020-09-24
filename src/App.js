@@ -7,7 +7,7 @@ function App() {
   const [css, setCss] = useState("");
   const [js, setJs] = useState("");
   return (
-    <React.Fragment>
+    <div className="pane-container">
       <div className="pane top-pane">
         <Editor
           language="xml"
@@ -34,10 +34,10 @@ function App() {
           sandbox="allow-scripts"
           width="100%"
           height="100%"
-          frameborder="0"
+          frameBorder="0"
         ></iframe>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 
